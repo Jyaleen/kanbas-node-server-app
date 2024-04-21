@@ -1,9 +1,9 @@
-export default [
+[
     {
         "_id": "Q1",
         "courseNumber": "RS101",
         "title": "Quiz 1",
-        "quizeType": "Graded Quiz",
+        "quizType": "Graded Quiz",
         "points": "26",
         "assignmentGroup": "Quizzes",
         "shuffleAnswers": true,

@@ -11,7 +11,6 @@ export default function QuizzesRoutes(app) {
         const quiz = db.quizzes.find((quiz) => quiz._id === quizId);
         res.send(quiz);
     });
-
     app.put("/api/courses/:cid/quizzes", async (req, res) => {
         const { cid } = req.params;
         const quizId = req.body._id;
@@ -33,8 +32,7 @@ export default function QuizzesRoutes(app) {
     });
     app.delete("/api/courses/:cid/quizzes/:quizId", async (req, res) => {
         const { quizId } = req.params;
-
         quizzes = db.quizzes.filter((quiz) => quiz._id !== quizId);
-        res.sendStatus(204);
+        res.sendStatus(200);
     });
 }
