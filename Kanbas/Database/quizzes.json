@@ -3,8 +3,9 @@
         "_id": "Q1",
         "courseNumber": "RS101",
         "title": "Quiz 1",
+        "instructions": "Do this and also that. Good luck!",
         "quizType": "Graded Quiz",
-        "points": "26",
+        "points": "10",
         "assignmentGroup": "Quizzes",
         "shuffleAnswers": true,
         "timeLimit": 20,
@@ -14,15 +15,37 @@
         "oneQuestionAtATime": true,
         "webcamRequired": false,
         "lockQuestions": false,
-        "dueDate": "Sun Apr 21 2024 23:59:59",
-        "availableDate": "Sun Apr 14 10:00:00",
-        "untilDate": "Mon Apr 22 2024 10:00:00"
+        "dueDate": "Sun Feb 02 2024 23:59:59",
+        "availableDate": "Sun Jan 26 2024 10:00:00",
+        "untilDate": "Mon Feb 03 2024 10:00:00",
+        "questions": [
+            {
+                "title": "Question 1",
+                "points": 5,
+                "question": "How many flavors of Cheetos are there?",
+                "questionType": "Fill in the blank",
+                "answer": {
+                    "isCorrect": true,
+                    "value": 6
+                }
+            },
+            {
+                "title": "Question 2",
+                "points": 5,
+                "question": "How many flavors of Lay's are there?",
+                "questionType": "Fill in the blank",
+                "answer": {
+                    "isCorrect": true,
+                    "value": 10
+                }
+            }
+        ]
     },
     {
         "_id": "Q2",
         "courseNumber": "RS101",
         "title": "Quiz 2",
-        "quizeType": "Practice Quiz",
+        "quizType": "Practice Quiz",
         "points": "15",
         "assignmentGroup": "Quizzes",
         "shuffleAnswers": false,
@@ -34,14 +57,14 @@
         "webcamRequired": false,
         "lockQuestions": false,
         "dueDate": "Mon Apr 22 2024 23:59:59",
-        "availableDate": "Mon Apr 15 10:00:00",
+        "availableDate": "Mon Apr 15 2024 10:00:00",
         "untilDate": "Tues Apr 23 2024 10:00:00"
     },
     {
         "_id": "Q3",
         "courseNumber": "RS101",
         "title": "Quiz 3",
-        "quizeType": "Graded Quiz",
+        "quizType": "Graded Quiz",
         "points": "100",
         "assignmentGroup": "Exams",
         "shuffleAnswers": true,
@@ -53,14 +76,14 @@
         "webcamRequired": false,
         "lockQuestions": false,
         "dueDate": "Sun Apr 21 2024 23:59:59",
-        "availableDate": "Sun Apr 14 10:00:00",
+        "availableDate": "Sun Apr 14 2024 10:00:00",
         "untilDate": "Mon Apr 22 2024 10:00:00"
     },
     {
         "_id": "Q4",
         "courseNumber": "RS101",
         "title": "Quiz 4",
-        "quizeType": "Graded Survey",
+        "quizType": "Graded Survey",
         "points": "50",
         "assignmentGroup": "Assignments",
         "shuffleAnswers": true,
@@ -72,14 +95,14 @@
         "webcamRequired": false,
         "lockQuestions": false,
         "dueDate": "Sun Apr 21 2024 23:59:59",
-        "availableDate": "Sun Apr 14 10:00:00",
+        "availableDate": "Sun Apr 14 2024 10:00:00",
         "untilDate": "Mon Apr 22 2024 10:00:00"
     },
     {
         "_id": "Q5",
         "courseNumber": "RS101",
         "title": "Quiz 5",
-        "quizeType": "Ungraded Survey",
+        "quizType": "Ungraded Survey",
         "points": "80",
         "assignmentGroup": "Project",
         "shuffleAnswers": true,
@@ -90,8 +113,8 @@
         "oneQuestionAtATime": true,
         "webcamRequired": false,
         "lockQuestions": false,
-        "dueDate": "Sun Apr 21 2024 23:59:59",
-        "availableDate": "Sun Apr 14 10:00:00",
-        "untilDate": "Mon Apr 22 2024 10:00:00"
+        "dueDate": "Sun May 21 2024 23:59:59",
+        "availableDate": "Sun May 14 2024 10:00:00",
+        "untilDate": "Mon May 22 2024 10:00:00"
     }
 ]

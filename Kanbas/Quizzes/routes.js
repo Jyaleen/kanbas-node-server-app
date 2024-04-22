@@ -14,7 +14,7 @@ export default function QuizzesRoutes(app) {
     app.put("/api/courses/:cid/quizzes", async (req, res) => {
         const { cid } = req.params;
         const quizId = req.body._id;
-        quizzes = db.quizzes.map((quiz) => {
+        const quizzes = db.quizzes.map((quiz) => {
             return quiz._id === quizId ? req.body : quiz;
         });
         res.send(quizzes);
@@ -23,9 +23,25 @@ export default function QuizzesRoutes(app) {
         const { cid } = req.params;
         const newQuiz = {
             _id: Date.now().toString(),
-            title: "Default Quiz Title",
+            title: "Default Quiz Name",
+            quizType: "Graded Quiz",
+            assignmentGroup: "Quizzes",
+            shuffleAnswers: true,
+            timeLimit: 20,
+            multipleAttempts: false,
+            showCorrectAnswers: false,
+            accessCode: "",
+            oneQuestionAtATime: true,
+            webcamRequired: false,
+            lockQuestions: false,
+            questions: [],
             isPublished: false,
             courseNumber: cid,
+            points: 0,
+            cid: cid,
+            availableDate: new Date().toString(),
+            dueDate: new Date().toString(),
+            untilDate: new Date().toString(),
         };
         db.quizzes.push(newQuiz);
         res.send(newQuiz);
